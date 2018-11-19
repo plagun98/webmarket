@@ -23,5 +23,8 @@
     "gulp.spritesmith": "^6.9.0",
     "imagemin-pngquant": "^6.0.0",
     "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "jquery-zoom": "^1.7.21"
   }
 }

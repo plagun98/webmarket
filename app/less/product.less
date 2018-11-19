@@ -1,0 +1,29 @@
+.slider{
+    max-width: 30rem;
+    border: 1px solid #ccc;
+    &__item{
+        img{
+            display: block;
+            max-width: 100%;
+        }
+    }
+    z-index: 4;
+}
+.slider-nav{
+    width: 30rem;
+    &__item{
+        margin: 5px 0;
+        border: 1px solid #ccc !important;
+        height: 10rem;
+        width: 25%;
+        opacity: 0.6;
+        &:hover, &.slick-current{
+            opacity: 1;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

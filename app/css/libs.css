@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import (less) "app/libs/magnific-popup/dist/magnific-popup.css";
 /* Slider */
 .slick-slider {
   position: relative;
