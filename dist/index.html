@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="container" id="header">
+            <img src="../img/headerlogo.png" id="headerlogo" alt="">
+            <p class="phone__number">+380123456789</p>
+            <div class="search__small headeritem">
+                <img src="../img/search.png" id="searchicon" alt="">
+            </div>
+            <div class="search">
+                <input class="input" type="text">
+                <svg viewBox="0 0 700 100" class="magnifying-glass">
+                    <path
+                        class="magnifying-glass-path"
+                        d="m 59.123035,59.123035 c -10.561361,10.56136 -27.684709,10.56136 -38.24607,0 -10.56136,-10.561361 -10.56136,-27.684709 0,-38.24607 10.561361,-10.56136 27.684709,-10.56136 38.24607,0 10.56136,10.561361 10.56136,27.684709 0,38.24607 l 28.876965,28.876965 c 6.304625,7.101523 5.754679,-0.187815 13.07143,-0.5 h 582.04101" />
+                    <path
+                        class="x"
+                        d="m 673.46803,25.714286 -37.17876,38.816532 c 0,0 -5.08857,5.60515 -5.68529,11.841734 -1.06622,11.143538 13.02902,11.127448 13.02902,11.127448" />
+                    <path
+                        class="x"
+                        d="m 635.08021,25.714286 37.17876,38.816532 c 0,0 5.08857,5.60515 5.68529,11.841734 1.06622,11.143538 -13.02902,11.127448 -13.02902,11.127448" />
+                </svg>
+                <div class="overlay overlay-1" id="overlay-1"></div>
+                <div class="overlay overlay-2" id="overlay-2"></div>
+            </div>
+            <div class="headeritems">
+                <img src="../img/headeritem.png" class="headeritem" alt="">
+                <img src="../img/headeritem.png" class="headeritem" alt="">
+                <img src="../img/headeritem.png" class="headeritem" alt="">
+                <img src="../img/headeritem.png" class="headeritem" alt="">
+            </div>
+        </div>
+    </header>
+    <a name="home"></a>
+    <div class="header__mobile">
+        <img src="../img/headerlogo.png">
+    </div>
+    <div class="navbar__mobile">
+        <ul class="menu__mobile">
+            <li><i class="fas fa-bars" id="burger"></i></li>
+            <li><i class="fas fa-sign-in-alt"></i></li>
+            <li><i class="fas fa-search" id="search__mobile"></i></li>
+            <li><i class="far fa-thumbs-up"></i></li>
+            <li><i class="far fa-heart"></i></li>
+            <li><i class="fas fa-shopping-cart"></i></li>
+        </ul>
+    </div>
+    <div class="search__mobile">
+        <input placeholder="Search here .." id="search__mobile__input" type="text">
+    </div>
+    <nav>
+        <div class="container" id="nav">
+            <div class="navitem navcollection"><span>&#9776; Каталог товаров</span></div>
+                <ul class="responsive__katalog">
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Huawei</a></li>
+                    <li><a href="#">Xiaomi</a></li>
+                </ul>
+            <div class="navitem" id="nav0"><span>Распродажа</span></div>
+            <div class="navitem" id="nav1"><span>Магазины</span></div>
+            <div class="navitem" id="nav2"><span>Рассрочка/Кредит</span></div>
+            <div class="navitem" id="nav3"><span>Доставка</span></div>
+            <div class="navitem" id="nav4"><span>Оплата</span></div>
+            <div class="navitem" id="nav5"><span>Гарантия</span></div>
+            <div class="navitem" id="nav6"><span>Ещё</span></div>
+            <ul class="more__items">
+                <li class="one__more__item"><a href="#">Я тут и так был</a></li>
+                <li class="hidden" id="not__nav3"><a href="#">Доставка</a></li>
+                <li class="hidden" id="not__nav4"><a href="#">Оплата</a></li>
+                <li class="hidden" id="not__nav5"><a href="#">Гарантия</a></li>
+            </ul>
+        </div>
+    </nav>
+   <section>
+       <div class="container" id="menu__slider">
+           <div class="menu">
+            <ul class="main-menu">
+                <li><a href="#">Samsung</a>
+                    <ul class="sub-menu">
+                        <li><a href="#1">Galaxy S9</a></li>
+                        <li><a href="#2">Galaxy A8</a></li>
+                        <li><a href="#3">Galaxy J5</a></li>
+                      </ul></li>
+                <li><a href="#">Apple</a>
+                  <ul class="sub-menu">
+                    <li><a href="#1">Iphone 5</a></li>
+                    <li><a href="#2">Iphone 6</a></li>
+                    <li><a href="#3">Iphone 7</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Huawei</a></li>
+                <li><a href="#">Xiaomi</a></li>
+              </ul>
+           </div>
+            <div class="slider__wrapper">
+                <div class="slider">
+                    <div class="slide">
+                        <!-- <img src="../img/iphone.jpg"> -->
+                    </div>
+                    <div class="slide">
+                        <!-- <img src="../img/iphone.jpg"> -->
+                    </div>
+                    <div class="slide">
+                        <!-- <img src="../img/iphone.jpg"> -->
+                    </div>
+                </div>
+           </div>
+       </div>
+   </section>
+   <section>
+    <div class="container">
+        <div class="photo__gallery">
+            <img src="../img/phone.jpg" title="какой-то товар" alt="">
+            <img src="../img/phone.jpg" title="какой-то товар" alt="">
+            <img src="../img/phone.jpg" title="какой-то товар" alt="">
+            <img src="../img/phone.jpg" title="какой-то товар" alt="">
+            <img src="../img/phone.jpg" title="какой-то товар" alt="">
+            <img src="../img/phone.jpg" title="какой-то товар" alt="">
+            <img src="../img/phone.jpg" title="какой-то товар" alt="">
+            <img src="../img/phone.jpg" title="какой-то товар" alt="">
+        </div>
+        <div class="aboutstore">
+            <p class="heading">Heading heading</p>
+            <ul>
+                <li><p class="text"><strong>- Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Quas ullam at blanditiis maxime ducimus harum, saepe, dolores nulla veniam labore facere aut perspiciatis autem reprehenderit error delectus aperiam sint corporis.</p></li>
+                <li><p class="text"><strong>- Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Quas ullam at blanditiis maxime ducimus harum, saepe, dolores nulla veniam labore facere aut perspiciatis autem reprehenderit error delectus aperiam sint corporis.</p></li>
+                <li><p class="text"><strong>- Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Quas ullam at blanditiis maxime ducimus harum, saepe, dolores nulla veniam labore facere aut perspiciatis autem reprehenderit error delectus aperiam sint corporis.</p></li>
+            </ul>
+            <p class="heading">Another heading</p>
+            <ul>
+                <li><p class="text"><strong>- Another lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Quas ullam at blanditiis maxime ducimus harum, saepe, dolores nulla veniam labore facere aut perspiciatis autem reprehenderit error delectus aperiam sint corporis.</p></li>
+                <li><p class="text"><strong>- Another lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Quas ullam at blanditiis maxime ducimus harum, saepe, dolores nulla veniam labore facere aut perspiciatis autem reprehenderit error delectus aperiam sint corporis.</p></li>
+                <li><p class="text"><strong>- Another lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Quas ullam at blanditiis maxime ducimus harum, saepe, dolores nulla veniam labore facere aut perspiciatis autem reprehenderit error delectus aperiam sint corporis.</p></li>
+            </ul>
+        </div>
+    </div>
+            
+   </section>
+   
+   <a href="#home"><div class="home__anchor"><img src="../img/up-arrow.png"/></div><
+   <footer>
+       <div class="container bottom">
+            <div class="informal">
+                <img src="../img/headerlogo.png" id="footerlogo" alt="">
+                <p class="footer__phone">+38 012 345 67 89</p>
+                <div class="back__call">
+                    <p>Обратный звонок</p>
+                </div>
+            </div>
+            <div class="categories" id="ct1">
+                <h3 class="h3heading">Categories</h3>
+                <div class="content" id="cn1">
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                </div>
+            </div>
+            <div class="categories" id="ct2">
+                <h3 class="h3heading">Useful info</h3>
+                <div class="content" id="cn2">
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                    <div class="categories__item"><a>item</a></div>
+                </div>
+            </div>
+            <div class="social__networks">
+                <div class="socnetimg"><img src="../img/facebook.png"></div>
+                <div class="socnetimg"><img src="../img/facebook.png"></div>
+            </div>
+       </div>
+   </footer>
+</body>
+</html>

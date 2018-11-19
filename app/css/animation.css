@@ -1,0 +1,30 @@
+@-webkit-keyframes minify {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.985);
+            transform: scale(0.985);
+  }
+}
+@keyframes minify {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.985);
+            transform: scale(0.985);
+  }
+}
+@-webkit-keyframes hovercolor {
+  to {
+    background: #f89b24;
+  }
+}
+@keyframes hovercolor {
+  to {
+    background: #f89b24;
+  }
+}
