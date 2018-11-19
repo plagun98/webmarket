@@ -187,18 +187,18 @@ header {
 }
 @media screen and (max-width: 1186px) {
   nav span {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
   navitem {
-    padding: 1.2rem 1.8rem;
+    padding: 1.2rem 1.8rem !important;
   }
 }
 @media screen and (max-width: 1113px) {
   nav span {
-    font-size: 1.3rem;
+    font-size: 1.3rem !important;
   }
   navitem {
-    padding: 1.2rem 1.6rem;
+    padding: 1.2rem 1.6rem !important;
   }
 }
 @media screen and (max-width: 1076px) {
@@ -218,7 +218,7 @@ header {
     left: 22rem;
   }
   .navcollection {
-    width: 22rem;
+    width: 22rem !important;
   }
   .slider__wrapper {
     width: -webkit-calc(100% - 220px);
@@ -316,5 +316,8 @@ header {
   }
   .slick-dots {
     top: 45rem;
+  }
+  .navcollection {
+    width: 96% !important;
   }
 }

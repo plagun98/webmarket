@@ -100,120 +100,9 @@ body{
   display: flex;
 }
 
-  nav{
-      background: rgba(10, 10, 10, 0.863);
-      width: 100%;
-      span{
-          color: white;
-          font-size: 1.6rem;
-      }
-  }
-  .navcollection{
-      width: 30rem;
-      background: rgb(83, 76, 76);
-  }
-  .navitem{
-      padding: 1.2rem 2rem;
-      &:hover:not(.navcollection){
-          background:  rgb(83, 76, 76);
-          cursor: pointer;
-          span:not(.navcollection){
-            color: white;
-          }
-      }
-  }
-  #nav{
-      display: flex;
-  }
-  .nav__fixed{
-    position: fixed;
-    z-index: 9999;
-    top: 36px;
-    left: 0;
-    background: #ffffff;
-  }
-  .nav__onclick__responsive{
-    display: block;
-    background:#ffffff;
-    #nav{
-      display: block;
-    }
-    span{
-      color: #000000;
-    }
-    .navcollection{
-      background: #ffffff;
-      span{
-        font-weight: bold;
-      }
-    }
-    .navitem{
-      width: 96%;
-      margin: 0 auto;
-      //pointer-events: none;
-      &:not(.navcollection){
-        border-top: 1px solid #f3f3f3;
-      }
-    }
-  }
-
-.more__items{
-  display: none;
-  position: absolute;
-  top: 4.6rem;
-  z-index: 100;
-  right: 6.8rem;
-  li{
-    width: 22rem;
-    padding: 15px 2rem;
-    background: #ffffff;
-    &:not(.one__more__item){
-      border-top: 1px solid #e5e5e5;
-    }
-    a{
-      font-size: 14px;
-    }
-  }
-  &__fixed{
-    display: block;
-    position: fixed;
-    right: 0;
-    top: 242px;
-    z-index: 10000;
-    width: 100%;
-    margin: 0 auto;
-    background: #ffffff;
-    li{
-      width: 96%;
-      margin: 0 auto;
-      padding: 3px 2rem;
-      border-top: 1px solid #f3f3f3;
-      a{
-        font-size: 14px;
-      }
-    }
-  }
-}
-.hidden{
-  display: none;
-  background: transparent;
-  border-top: 1px solid #f3f3f3;
-}
 
 
-  .responsive__katalog{
-    display: none;
-    width: 96%;
-    margin: 0 auto;
-    background: #ffffff;
-    li{
-      padding: 3px 2rem;
-      border-top: 1px solid #f3f3f3;
-      a{
-        font-size: 14px;
-      }
-    }
-  }
+
   .onclick{
     display: block !important;
   }
@@ -407,3 +296,4 @@ body{
 @import 'media';
 @import 'animation';
 @import 'header';
+@import 'nav';
