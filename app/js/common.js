@@ -152,7 +152,9 @@ screenWidth4();
 screenWidth3();
 screenWidth1();
 
-
+$('.search__small').click(()=>{
+  $('.search__mobile').toggleClass("search__mobile__onclick");
+})
 
 }
 

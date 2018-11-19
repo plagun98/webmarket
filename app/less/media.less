@@ -4,10 +4,10 @@
         display: none;
     }
     .search__small{
-        display: block;
+        display: block !important;
         &:hover{
-            .search{
-                display: block;
+            .search__mobile{
+                display: block !important;
                 position: absolute;
                 top: 68px;
             }
@@ -104,6 +104,9 @@
     .phone__number{
         padding-left: 15rem;
     }
+    #headerlogo{
+        margin: 0.9rem 3rem !important;
+    }
 }
 @media screen and (max-width: 767px){
     .photo__gallery{
@@ -117,7 +120,7 @@
         display: none;
     }
     .header__mobile{
-        display: block;
+        display: block !important;
     }
     .menu__mobile{
         display: flex;

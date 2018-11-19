@@ -1,0 +1,320 @@
+header {
+  background: #ffffff;
+  height: 6.8rem;
+  overflow: hidden;
+  z-index: 9999;
+}
+#headerlogo {
+  padding-left: 5rem;
+  margin: 0.9rem 5rem;
+  max-height: 5rem;
+}
+#header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__mobile {
+  display: none;
+  background: #ffffff;
+  width: 100%;
+}
+.header__mobile img {
+  max-height: 7rem;
+  width: auto;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: block;
+}
+.header__fixed {
+  position: fixed;
+  width: 100%;
+}
+.search__mobile {
+  display: none;
+}
+.search__mobile__onclick {
+  display: block !important;
+}
+#search__mobile__input {
+  width: 100%;
+  padding-left: 3rem;
+  border: none;
+  background: #fafafa !important;
+  outline: none;
+  height: 24px;
+  color: #000000;
+  font-size: 16px;
+}
+.phone__number {
+  padding: 2.4rem 0 2.4rem 10%;
+  margin-right: 1rem;
+  font-size: 2rem;
+  line-height: 1;
+  height: 100%;
+}
+.headeritems {
+  padding: 0 10rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.headeritem {
+  max-height: 2rem;
+  margin: 2.4rem 1rem;
+  cursor: pointer;
+}
+.search__small {
+  width: 2rem;
+  display: none;
+}
+.search__small img {
+  width: 2rem;
+  height: auto;
+}
+.search {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  margin: 12px 0 11px 0;
+}
+.magnifying-glass {
+  position: relative;
+  -webkit-transform: translateX(40%);
+      -ms-transform: translateX(40%);
+          transform: translateX(40%);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  -o-transition: transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+.search.active .magnifying-glass {
+  -webkit-transform: translateX(-7%);
+      -ms-transform: translateX(-7%);
+          transform: translateX(-7%);
+}
+.magnifying-glass-path {
+  fill: none;
+  stroke-dasharray: 210 808;
+  stroke-linecap: round;
+  stroke-width: 6;
+  stroke: #000;
+  -webkit-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
+  -o-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
+}
+.search.active .magnifying-glass-path {
+  stroke-dasharray: 580 808;
+  stroke-dashoffset: -224px;
+}
+.x {
+  fill: none;
+  stroke-dasharray: 56 92;
+  stroke-dashoffset: -92px;
+  stroke-linecap: round;
+  stroke-width: 6;
+  stroke: #000;
+  -webkit-transition: stroke-dashoffset 500ms;
+  -o-transition: stroke-dashoffset 500ms;
+  transition: stroke-dashoffset 500ms;
+  visibility: hidden;
+}
+.search.active .x {
+  visibility: visible;
+}
+.search.searching .x {
+  stroke-dashoffset: 0;
+}
+.input {
+  border: 0;
+  font-size: 1.6rem;
+  left: 20px;
+  outline: 0 !important;
+  position: absolute;
+  top: 0.8rem;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transition: background 300ms;
+  -o-transition: background 300ms;
+  transition: background 300ms;
+}
+.overlay-1 {
+  height: 64px;
+  left: 110px;
+  top: -10px;
+  width: 64px;
+}
+.overlay-2 {
+  height: 38px;
+  left: 240px;
+  top: 0px;
+  width: 38px;
+}
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+.search.active .overlay-1 {
+  visibility: hidden;
+}
+.search:not(.active) .overlay-2,
+.search:not(.searching) .overlay-2 {
+  visibility: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .search {
+    display: none;
+  }
+  .search__small {
+    display: block !important;
+  }
+  .search__small:hover .search__mobile {
+    display: block !important;
+    position: absolute;
+    top: 68px;
+  }
+}
+@media screen and (max-width: 1186px) {
+  nav span {
+    font-size: 1.4rem;
+  }
+  navitem {
+    padding: 1.2rem 1.8rem;
+  }
+}
+@media screen and (max-width: 1113px) {
+  nav span {
+    font-size: 1.3rem;
+  }
+  navitem {
+    padding: 1.2rem 1.6rem;
+  }
+}
+@media screen and (max-width: 1076px) {
+  #nav5 {
+    display: none;
+  }
+  .not__nav5 {
+    display: block;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .main-menu {
+    width: 22rem;
+  }
+  .main-menu .sub-menu {
+    width: 22rem;
+    left: 22rem;
+  }
+  .navcollection {
+    width: 22rem;
+  }
+  .slider__wrapper {
+    width: -webkit-calc(100% - 220px);
+    width: calc(100% - 220px);
+  }
+}
+@media screen and (max-width: 973px) {
+  #nav4 {
+    display: none;
+  }
+}
+@media screen and (max-width: 958px) {
+  .bottom {
+    display: block;
+    padding-top: 0;
+  }
+  #footerlogo {
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 0;
+    height: 9rem;
+  }
+  .footerphone {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .h3heading {
+    text-align: center;
+  }
+  .categories {
+    cursor: pointer;
+    padding: 1rem 0 0;
+  }
+  .categories__item a {
+    padding-left: 35%;
+  }
+  .content {
+    display: none;
+  }
+  .social__networks {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 870px) {
+  #nav3 {
+    display: none;
+  }
+  .phone__number {
+    padding-left: 15rem;
+  }
+  #headerlogo {
+    margin: 0.9rem 3rem !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .photo__gallery {
+    margin-top: 5rem;
+  }
+  .photo__gallery img {
+    width: 100%;
+    height: auto;
+  }
+  header {
+    display: none;
+  }
+  .header__mobile {
+    display: block !important;
+  }
+  .menu__mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fafafa;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .slider {
+    width: 96%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .slider__wrapper {
+    width: 100%;
+    height: -webkit-calc(100vh - 11rem);
+    height: calc(100vh - 11rem);
+  }
+  .slick-dots {
+    top: 45rem;
+  }
+}
