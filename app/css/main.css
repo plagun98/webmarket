@@ -26,27 +26,6 @@ body {
   max-width: 124rem;
   margin: 0 auto;
 }
-.menu__mobile {
-  background: #ffffff;
-  display: none;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-.menu__mobile li {
-  padding: 1rem 0;
-  padding: white;
-}
-.menu__mobile i {
-  font-size: 16px;
-}
-.menu__mobile__fixed {
-  background: #ffffff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 9999;
-}
 .main-menu {
   width: 30rem;
 }
@@ -409,10 +388,10 @@ footer {
     display: block !important;
   }
   .menu__mobile {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     background: #fafafa;
   }
   nav {
@@ -467,6 +446,34 @@ footer {
   to {
     background: #f89b24;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+li {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: #fafafa;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 124rem;
+  margin: 0 auto;
 }
 header {
   background: #ffffff;
@@ -642,6 +649,34 @@ header {
 .search:not(.searching) .overlay-2 {
   visibility: hidden;
 }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+li {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: #fafafa;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 124rem;
+  margin: 0 auto;
+}
 nav {
   background: rgba(10, 10, 10, 0.863);
   width: 100%;
@@ -754,4 +789,27 @@ nav span {
 }
 .responsive__katalog li a {
   font-size: 14px;
+}
+.menu__mobile {
+  background: #ffffff;
+  display: none;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.menu__mobile li {
+  padding: 1rem 0;
+}
+.menu__mobile i {
+  font-size: 16px;
+}
+.menu__mobile__fixed {
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+.onclick {
+  display: block !important;
 }

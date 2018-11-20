@@ -11,19 +11,197 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
+    <a name="home"></a>
+    <div class="div"></div>
+    <header>
+        <div class="container" id="header">
+            <img src="../img/headerlogo.png" id="headerlogo" alt="">
+            <p class="phone__number">+380123456789</p>
+            <div class="search__small headeritem">
+                <img src="../img/search.png" id="searchicon" alt="">
+            </div>
+            <div class="search">
+                <input class="input" type="text">
+                <svg viewBox="0 0 700 100" class="magnifying-glass">
+                    <path
+                        class="magnifying-glass-path"
+                        d="m 59.123035,59.123035 c -10.561361,10.56136 -27.684709,10.56136 -38.24607,0 -10.56136,-10.561361 -10.56136,-27.684709 0,-38.24607 10.561361,-10.56136 27.684709,-10.56136 38.24607,0 10.56136,10.561361 10.56136,27.684709 0,38.24607 l 28.876965,28.876965 c 6.304625,7.101523 5.754679,-0.187815 13.07143,-0.5 h 582.04101" />
+                    <path
+                        class="x"
+                        d="m 673.46803,25.714286 -37.17876,38.816532 c 0,0 -5.08857,5.60515 -5.68529,11.841734 -1.06622,11.143538 13.02902,11.127448 13.02902,11.127448" />
+                    <path
+                        class="x"
+                        d="m 635.08021,25.714286 37.17876,38.816532 c 0,0 5.08857,5.60515 5.68529,11.841734 1.06622,11.143538 -13.02902,11.127448 -13.02902,11.127448" />
+                </svg>
+                <div class="overlay overlay-1" id="overlay-1"></div>
+                <div class="overlay overlay-2" id="overlay-2"></div>
+            </div>
+            <div class="headeritems">
+                <img src="../img/headeritem.png" class="headeritem" alt="">
+                <img src="../img/headeritem.png" class="headeritem" alt="">
+                <img src="../img/headeritem.png" class="headeritem" alt="">
+                <img src="../img/headeritem.png" class="headeritem" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="header__mobile">
+        <img src="../img/headerlogo.png">
+    </div>
+    <div class="navbar__mobile">
+        <ul class="menu__mobile">
+            <li><i class="fas fa-bars" id="burger"></i></li>
+            <li><i class="fas fa-sign-in-alt"></i></li>
+            <li><i class="fas fa-search" id="search__mobile"></i></li>
+            <li><i class="far fa-thumbs-up"></i></li>
+            <li><i class="far fa-heart"></i></li>
+            <li><i class="fas fa-shopping-cart"></i></li>
+        </ul>
+    </div>
+    <div class="search__mobile">
+        <input placeholder="Search here .." id="search__mobile__input" type="text">
+    </div>
+    <nav>
+        <div class="container" id="nav">
+            <div class="navitem navcollection"><span>&#9776; Каталог товаров</span></div>
+                <ul class="responsive__katalog">
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Huawei</a></li>
+                    <li><a href="#">Xiaomi</a></li>
+                </ul>
+            <div class="navitem" id="nav0"><span>Распродажа</span></div>
+            <div class="navitem" id="nav1"><span>Магазины</span></div>
+            <div class="navitem" id="nav2"><span>Рассрочка/Кредит</span></div>
+            <div class="navitem" id="nav3"><span>Доставка</span></div>
+            <div class="navitem" id="nav4"><span>Оплата</span></div>
+            <div class="navitem" id="nav5"><span>Гарантия</span></div>
+            <div class="navitem" id="nav6"><span>Ещё</span></div>
+            <ul class="more__items">
+                <li class="one__more__item"><a href="#">Я тут и так был</a></li>
+                <li class="hidden" id="not__nav3"><a href="#">Доставка</a></li>
+                <li class="hidden" id="not__nav4"><a href="#">Оплата</a></li>
+                <li class="hidden" id="not__nav5"><a href="#">Гарантия</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="product__item">
+                <div class="product__view">
+                    <div class="slider">
+                        <div class="slider__item"><img src="../img/slider-img.jpg" alt=""></div>
+                        <div class="slider__item"><img src="../img/slider-img2.jpg" alt=""></div>
+                        <div class="slider__item"><img src="../img/slider-img.jpg" alt=""></div>
+                        <div class="slider__item"><img src="../img/slider-img2.jpg" alt=""></div>
+                    </div>
+                    <div class="slider-nav">
+                        <div class="slider-nav__item"><img src="../img/slider-img.jpg" alt=""></div>
+                        <div class="slider-nav__item"><img src="../img/slider-img2.jpg" alt=""></div>
+                        <div class="slider-nav__item"><img src="../img/slider-img.jpg" alt=""></div>
+                        <div class="slider-nav__item"><img src="../img/slider-img2.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <div class="product__info__header">
+                        <p id="product__name">Туфля Гусси</p>
+                        <div class="product__state">
+                            <div class="product__available">
+                                <i class="far fa-check-circle"></i>
+                                <p>Есть в наличии</p>
+                            </div>
+                            <p id="product__code">Код продукта: 14886969</p>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="product__feedback">
+                                <a href="#">Отзывы</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__info__main">
+                        <div class="product__info__left">
+                            <div class="product__price">
+                                <p>1488 грн.</p>
+                            </div>
+                            <div class="product__purchase">
+                                <div class="purchase">
+                                    <p>Купить</p>
+                                </div>
+                                <div class="credit">
+                                    <p>Купить в рассрочку</p>
+                                </div>
+                            </div>
+                            <div class="bottom__line">
+                                <a href="#">Купить в один клик</a>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-thumbs-up"></i>
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="technical__specs">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut alias sed quaerat assumenda ad in saepe molestiae fugiat excepturi consequuntur officiis tenetur vel expedita labore, reprehenderit optio cum tempora! Exercitationem!</p>
+                            </div>
+                        </div>
+                        <div class="product__info__right">
+                            <div class="right__container">
+                                <div class="right__item post">
+                                    <div class="right__item__header">
+                                        <i class="fas fa-shipping-fast"></i>
+                                        <p>Доставка</p>
+                                    </div>
+                                    <div class="right__item__content">
+                                        <ul>
+                                            <li><p>Самовывоз</p></li>
+                                            <li><p>Экспресс доставка по Киеву</p></li>
+                                            <li><p>Адресная доставка по Киевской области</p></li>
+                                            <li><p>Хоть твоей мамке в пизду</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="right__item pay">
+                                    <div class="right__item__header">
+                                        <i class="fas fa-hryvnia"></i>
+                                        <p>Оплата</p>
+                                    </div>
+                                    <div class="right__item__content">
+                                        <ul>
+                                            <li><p>Visa</p></li>
+                                            <li><p>Mastercard</p></li>
+                                            <li><p>Analik</p></li>
+                                            <li><p>Bethovenы</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="right__item warranty">
+                                    <div class="right__item__header">
+                                            <i class="fas fa-shield-alt"></i>
+                                        <p>Гарантия</p>
+                                    </div>
+                                    <div class="right__item__content">
+                                        <ul>
+                                            <li><p>12 месяцев под заставу жеппы</p></li>
+                                            <li><p>Мамой клянусь</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="product__details">
+        <div class="container">
 
-    <div class="slider">
-        <div class="slider__item"><img src="../img/slider-img.jpg" alt=""></div>
-        <div class="slider__item"><img src="../img/slider-img2.jpg" alt=""></div>
-        <div class="slider__item"><img src="../img/slider-img.jpg" alt=""></div>
-        <div class="slider__item"><img src="../img/slider-img2.jpg" alt=""></div>
-    </div>
-    <div class="slider-nav">
-        <div class="slider-nav__item"><img src="../img/slider-img.jpg" alt=""></div>
-        <div class="slider-nav__item"><img src="../img/slider-img2.jpg" alt=""></div>
-        <div class="slider-nav__item"><img src="../img/slider-img.jpg" alt=""></div>
-        <div class="slider-nav__item"><img src="../img/slider-img2.jpg" alt=""></div>
-    </div>
+        </div>
+    </section>
+
+
+
 
 
     <script src="js/libs.min.js"></script>
