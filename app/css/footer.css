@@ -1,3 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+li {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: #fafafa;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 124rem;
+  margin: 0 auto;
+}
+footer {
+  background: #303030;
+}
+#footerlogo {
+  height: 5rem;
+  display: block;
+  margin: 0 auto;
+}
+.bottom {
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 80%;
+}
+.footer__phone {
+  font-size: 22px;
+  padding: 15px 0;
+  white-space: nowrap;
+  color: #ccc;
+  text-align: center;
+}
+.back__call {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #f89b24;
+  width: 19.1rem;
+}
+.back__call:hover {
+  -webkit-animation: hovercolor 0.2s linear forwards;
+          animation: hovercolor 0.2s linear forwards;
+}
+.back__call p {
+  font-size: 1.4rem;
+  line-height: 2.5;
+  color: #f89b24;
+  text-align: center;
+}
+.back__call p:hover {
+  color: #fff;
+}
+.categories {
+  width: 100%;
+  padding-left: 3%;
+}
+.categories__item {
+  width: 50%;
+  line-height: 1.1;
+  padding: 6px 0;
+  display: inline-block;
+  font-size: 13px;
+  color: #ccc;
+}
+.categories__item a {
+  cursor: pointer;
+}
+.h3heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f89b24;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+}
+.content__display {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.social__networks {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.socnetimg {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #f89b24;
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.socnetimg img {
+  padding: 1.2rem;
+}
+.socnetimg img:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
 @media screen and (max-width: 1200px) {
   .search {
     display: none;

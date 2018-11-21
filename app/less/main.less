@@ -169,91 +169,7 @@ body{
   }
 
 
-  footer{
-    background: #303030;
-  }
-  #footerlogo{
-    height: 5rem;
-  }
-  .bottom{
-    padding: 4rem 0;
-    display: flex;
-    max-width: 80%;
-  }
-  .footer__phone{
-    font-size: 22px;
-    padding: 15px 0;
-    white-space: nowrap;
-    color: #ccc;
-    text-align: center;
-  }
-  .back__call{
-    display: block;
-    margin: 0 auto;
-    border: 2px solid #f89b24;
-    width: 19.1rem;
-    &:hover{
-      // background: #f89b24;
-      // p{
-      //   color: #fff;
-      // }
-      animation: hovercolor 0.2s linear forwards;
-    }
-    p{  
-      font-size: 1.4rem;
-      line-height: 2.5;
-      color: #f89b24;
-      text-align: center;
-      &:hover{
-        color: #fff;
-      }
-    }
-  }
-  .categories{
-    width: 100%;
-    padding-left: 3%;
-    &__item{
-      width: 50%;
-      line-height: 1.1;
-      padding: 6px 0;
-      display: inline-block;
-      font-size: 13px;
-      color: #ccc;
-    }
-  }
-  .h3heading{
-    font-size: 18px;
-    font-weight: bold;
-    color: #f89b24;
-    margin-bottom: 20px;
-    //animation: hue 10s infinite linear;
-  }
-  .content{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .content__display{
-    display: flex !important;
-  }
 
-  .social__networks{
-    display: flex;
-  }
-  .socnetimg{
-    border-radius: 50%;
-    background: #f89b24;
-    width: 4.8rem;
-    height: 4.8rem;
-    margin-right: 0.5rem;
-    cursor: pointer;
-    img{
-      padding: 1.2rem;
-      &:hover{
-        filter: invert(1);
-      }
-    }
-  }
   .home__anchor{
     display: none;
     position: fixed;
@@ -264,6 +180,7 @@ body{
     right: 3rem;
     bottom: 5rem;
     z-index: 99;
+    cursor: pointer;
     img{
         padding: 1.3rem;
         &:hover{
@@ -279,3 +196,4 @@ body{
 @import 'animation';
 @import 'header';
 @import 'nav';
+@import 'footer';

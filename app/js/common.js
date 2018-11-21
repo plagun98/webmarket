@@ -156,6 +156,13 @@ $('.search__small').click(()=>{
   $('.search__mobile').toggleClass("search__mobile__onclick");
 })
 
+
+$('body').append('<div class="home__anchor"><img src="../img/up-arrow.png"/></div>');
+$('.home__anchor').click(()=>{
+  $('body, html').animate({scrollTop: 0}, 0);
+});
+
+
 }
 
 
