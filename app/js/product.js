@@ -80,7 +80,7 @@ window.onload = function(){
         });
         
         $(window).scroll(function(){
-          if(window.innerWidth > 767){
+          if(window.innerWidth >= 767){
             var scrolled = ($(window).scrollTop());
             if(scrolled > 200 && scrolled < 400){
               $("header").fadeOut(1);
@@ -157,7 +157,7 @@ window.onload = function(){
           }
         }
         function screenWidth2(){
-          if(window.innerWidth < 767){
+          if(window.innerWidth <= 767){
             $(".hidden").removeClass("hidden");
           }
         }

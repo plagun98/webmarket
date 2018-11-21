@@ -1,7 +1,9 @@
 .slider{
-    max-width: 30rem;
+    max-width: 34rem;
     //border: 1px solid #ccc;
     &__item{
+        width: 100%;
+        height: auto;
         img{
             display: block;
             max-width: 100%;
@@ -10,12 +12,11 @@
     z-index: 4;
 }
 .slider-nav{
-    width: 30rem;
+    max-width: 34rem;
     &__item{
-        margin: 5px 0;
-        //border: 1px solid #ccc !important;
-        height: 10rem;
+        padding: 5px 2px;
         width: 25%;
+        height: auto;
         opacity: 0.6;
         &:hover, &.slick-current{
             opacity: 1;
@@ -57,6 +58,12 @@
     font-size: 14px;
     i{
         margin-right: 5px;
+    }
+    &__container1{
+        display: flex;
+    }
+    &__container2{
+        display: flex;
     }
 }
 .product__available{
@@ -212,11 +219,99 @@
 }
 
 
+@media screen and (max-width: 1300px){
+    .product__item{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
 
+@media screen and (max-width: 1170px){
+    .slider{
+        max-width: 30rem;
+        &-nav{
+            max-width: 30rem;
+        }
+    }
+    .product__info{
+        width: 100%;
+    }
+    .product__purchase{
+        display: block;
+        p{
+            text-align: center;
+        }
+    }
+    .purchase{
+        margin-right: 0;
+        margin-bottom: 1rem;
+        max-width: 30rem;
+    }
+    .credit{
+        max-width: 30rem;
+    }
+    .product__state{
+        display: block;
+        &__container2{
+            margin-top: 1rem;
+        }
+    }
+    .product__info__left{
+        width: 70%;
+    }
+    .product__info__right{
+        width: 30%;
+        li{
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+    .right__item__header{
+        i{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width: 1100px){
+    .slider{
+        max-width: 26rem;
+    }
+    .slider-nav{
+        max-width: 26rem;
+    }
+}
+@media screen and (max-width: 900px){
+    .product__info__main{
+        display: block;
+    }
+    .product__info__left{
+        width: 100%;
+    }
+    .product__info__right{
+        width: 100%;
+        border-left: none;
+        li{
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    .right__item__header{
+        i{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (max-width: 767px){
 
-
-
-
+}
 
 
 

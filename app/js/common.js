@@ -66,7 +66,7 @@ $("#search__mobile").click(function(){
 });
 
 $(window).scroll(function(){
-  if(window.innerWidth > 767){
+  if(window.innerWidth >= 767){
     var scrolled = ($(window).scrollTop());
     if(scrolled > 200 && scrolled < 400){
       $("header").fadeOut(1);
@@ -143,7 +143,7 @@ function screenWidth3(){
   }
 }
 function screenWidth2(){
-  if(window.innerWidth < 767){
+  if(window.innerWidth <= 767){
     $(".hidden").removeClass("hidden");
   }
 }
