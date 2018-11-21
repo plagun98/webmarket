@@ -168,10 +168,32 @@ window.onload = function(){
         
         $('.search__small').click(()=>{
           $('.search__mobile').toggleClass("search__mobile__onclick");
-        })
+        });
         
-        
-        
+        $('#review').click(()=>{
+          $('#review').addClass("click__border");
+          $('#techspecs').removeClass("click__border");
+          $('#feedback').removeClass("click__border");
+          $('.details__review').addClass("click__display");
+          $('.details__techspecs').removeClass("click__display");
+          $('.details__feedback').removeClass("click__display");
+        });
+        $('#techspecs').click(()=>{
+          $('#techspecs').addClass("click__border");
+          $('#review').removeClass("click__border");
+          $('#feedback').removeClass("click__border");
+          $('.details__techspecs').addClass("click__display");
+          $('.details__review').removeClass("click__display");
+          $('.details__feedback').removeClass("click__display");
+        });
+        $('#feedback').click(()=>{
+          $('#feedback').addClass("click__border");
+          $('#techspecs').removeClass("click__border");
+          $('#review').removeClass("click__border");
+          $('.details__feedback').addClass("click__display");
+          $('.details__techspecs').removeClass("click__display");
+          $('.details__review').removeClass("click__display");
+        });
         
 
 
