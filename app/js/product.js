@@ -1,6 +1,6 @@
 window.onload = function(){
 
-    $('.slider').slick({
+    $('.slider1').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
@@ -11,13 +11,18 @@ window.onload = function(){
       $('.slider-nav').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        asNavFor: '.slider',
+        asNavFor: '.slider1',
         centerMode: true,
         centerPadding: '0px',
         focusOnSelect: true,
         swipe: false
       });
-      $('.slider__item').zoom();
+      if(window.innerWidth > 767){
+        $('.slider__item').zoom();
+      } else{
+        $('.product__view').appendTo($('.product__state'));
+      }
+      
 
     
         //search
