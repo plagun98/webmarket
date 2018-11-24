@@ -54,6 +54,7 @@ footer {
   margin: 0 auto;
   border: 2px solid #f89b24;
   width: 19.1rem;
+  cursor: pointer;
 }
 .back__call:hover {
   -webkit-animation: hovercolor 0.2s linear forwards;
