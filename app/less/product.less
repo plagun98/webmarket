@@ -216,7 +216,24 @@
 .click__display{
     display: block !important;
 }
-
+.home__anchor{
+    display: none;
+    position: fixed;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+    background-color: #f89b24;
+    right: 3rem;
+    bottom: 5rem;
+    z-index: 99;
+    cursor: pointer;
+    img{
+        padding: 1.3rem;
+        &:hover{
+          filter: invert(1);
+        }
+    }
+}
 
 @media screen and (max-width: 1300px){
     .product__item{
@@ -226,11 +243,11 @@
 }
 
 @media screen and (max-width: 1170px){
-    .slider{
+    .slider1{
         max-width: 30rem;
-        &-nav{
-            max-width: 30rem;
-        }
+    }
+    .slider-nav{
+        max-width: 30rem;
     }
     .product__info{
         width: 100%;
@@ -276,7 +293,7 @@
     }
 }
 @media screen and (max-width: 1100px){
-    .slider{
+    .slider1{
         max-width: 26rem;
     }
     .slider-nav{
@@ -314,7 +331,7 @@
         margin-bottom: 2rem;
     }
     .slider1{
-        max-width: 70%;
+        max-width: 25rem;
         margin: 2rem auto;
     }
     .purchase{
