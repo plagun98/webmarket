@@ -18,7 +18,7 @@ window.onload = function(){
         swipe: false
       });
       if(window.innerWidth > 767){
-        $('.slider1__item').zoom();
+        $('.slider__item').zoom();
       } else{
         $('.product__view').appendTo($('.product__state'));
       }
@@ -199,17 +199,10 @@ window.onload = function(){
           $('.details__techspecs').removeClass("click__display");
           $('.details__review').removeClass("click__display");
         });
-      
+        
 
-        $.ajax({
-          type: "GET",
-          dataType: 'json',
-          contentType: 'application/json; charset=utf-8',
-          url: 'https://aquaplanner-dev.herokuapp.com/product/1',
-          success: function(jsondata){
-            console.log(jsondata);
-          }
-        })
+
+
 
 
 

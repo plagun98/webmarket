@@ -34,9 +34,35 @@ nav span {
   color: white;
   font-size: 1.6rem;
 }
+.nav__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav__container__mobile {
+  display: block;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  width: -webkit-calc(100vw - 26rem);
+  width: calc(100vw - 26rem);
+  height: 100%;
+  z-index: 100;
+  background: rgba(10, 10, 10, 0.863) !important;
+}
+.nav__container__smallest {
+  display: block !important;
+  z-index: 110;
+  width: 100%;
+}
+.nav__container__smallest .navitem {
+  background: #ffffff;
+}
 .navcollection {
   width: 30rem;
   background: #534c4c;
+  cursor: pointer;
 }
 .navitem {
   padding: 1.2rem 2rem;
@@ -47,6 +73,12 @@ nav span {
 }
 .navitem:hover:not(.navcollection) span:not(.navcollection) {
   color: white;
+}
+.colored__background {
+  background: black;
+}
+.display__none {
+  display: none;
 }
 #nav {
   display: -webkit-box;
@@ -84,47 +116,16 @@ nav span {
 .nav__onclick__responsive .navitem:not(.navcollection) {
   border-top: 1px solid #f3f3f3;
 }
-.more__items {
+.responsive__burger {
   display: none;
   position: absolute;
-  top: 4.6rem;
-  z-index: 100;
-  right: 6.8rem;
+  right: 4rem;
 }
-.more__items li {
-  width: 22rem;
-  padding: 15px 2rem;
-  background: #ffffff;
-}
-.more__items li:not(.one__more__item) {
-  border-top: 1px solid #e5e5e5;
-}
-.more__items li a {
-  font-size: 14px;
-}
-.more__items__fixed {
-  display: block;
-  position: fixed;
-  right: 0;
-  top: 242px;
-  z-index: 10000;
-  width: 100%;
-  margin: 0 auto;
-  background: #ffffff;
-}
-.more__items__fixed li {
-  width: 96%;
-  margin: 0 auto;
-  padding: 3px 2rem;
-  border-top: 1px solid #f3f3f3;
-}
-.more__items__fixed li a {
-  font-size: 14px;
-}
-.hidden {
-  display: none;
-  background: transparent;
-  border-top: 1px solid #f3f3f3;
+.responsive__burger i {
+  color: #ffffff;
+  font-size: 2.4rem;
+  margin: 0.8rem 0;
+  cursor: pointer;
 }
 .responsive__katalog {
   display: none;
@@ -162,6 +163,15 @@ nav span {
 .onclick {
   display: block !important;
 }
+@media screen and (max-width: 1300px) {
+  #menu__slider {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #nav {
+    padding-left: 2rem;
+  }
+}
 @media screen and (max-width: 1200px) {
   .search {
     display: none;
@@ -175,31 +185,15 @@ nav span {
     top: 68px;
   }
 }
-@media screen and (max-width: 1186px) {
+@media screen and (max-width: 1132px) {
   nav span {
     font-size: 1.4rem !important;
   }
-  navitem {
+  .navitem {
     padding: 1.2rem 1.8rem !important;
   }
 }
-@media screen and (max-width: 1113px) {
-  nav span {
-    font-size: 1.3rem !important;
-  }
-  navitem {
-    padding: 1.2rem 1.6rem !important;
-  }
-}
-@media screen and (max-width: 1076px) {
-  #nav5 {
-    display: none;
-  }
-  .not__nav5 {
-    display: block;
-  }
-}
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1037px) {
   .main-menu {
     width: 22rem;
   }
@@ -213,11 +207,6 @@ nav span {
   .slider__wrapper {
     width: -webkit-calc(100% - 220px);
     width: calc(100% - 220px);
-  }
-}
-@media screen and (max-width: 973px) {
-  #nav4 {
-    display: none;
   }
 }
 @media screen and (max-width: 958px) {
@@ -254,11 +243,14 @@ nav span {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  nav span {
+    font-size: 1.2rem !important;
+  }
+  .navitem {
+    padding: 1.2rem 1.5rem !important;
+  }
 }
 @media screen and (max-width: 870px) {
-  #nav3 {
-    display: none;
-  }
   .phone__number {
     padding-left: 15rem;
   }

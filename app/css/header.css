@@ -200,6 +200,15 @@ header {
 .search:not(.searching) .overlay-2 {
   visibility: hidden;
 }
+@media screen and (max-width: 1300px) {
+  #menu__slider {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #nav {
+    padding-left: 2rem;
+  }
+}
 @media screen and (max-width: 1200px) {
   .search {
     display: none;
@@ -213,31 +222,15 @@ header {
     top: 68px;
   }
 }
-@media screen and (max-width: 1186px) {
+@media screen and (max-width: 1132px) {
   nav span {
     font-size: 1.4rem !important;
   }
-  navitem {
+  .navitem {
     padding: 1.2rem 1.8rem !important;
   }
 }
-@media screen and (max-width: 1113px) {
-  nav span {
-    font-size: 1.3rem !important;
-  }
-  navitem {
-    padding: 1.2rem 1.6rem !important;
-  }
-}
-@media screen and (max-width: 1076px) {
-  #nav5 {
-    display: none;
-  }
-  .not__nav5 {
-    display: block;
-  }
-}
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1037px) {
   .main-menu {
     width: 22rem;
   }
@@ -251,11 +244,6 @@ header {
   .slider__wrapper {
     width: -webkit-calc(100% - 220px);
     width: calc(100% - 220px);
-  }
-}
-@media screen and (max-width: 973px) {
-  #nav4 {
-    display: none;
   }
 }
 @media screen and (max-width: 958px) {
@@ -292,11 +280,14 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  nav span {
+    font-size: 1.2rem !important;
+  }
+  .navitem {
+    padding: 1.2rem 1.5rem !important;
+  }
 }
 @media screen and (max-width: 870px) {
-  #nav3 {
-    display: none;
-  }
   .phone__number {
     padding-left: 15rem;
   }
