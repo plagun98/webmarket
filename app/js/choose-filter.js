@@ -1,29 +1,8 @@
-window.onload = ()=>{
+window.onload = () => {
 
-    $('.slider1').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-        asNavFor: '.slider-nav',
-        arrows: 'false',
-        swipe: false
-      });
-      $('.slider-nav').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.slider1',
-        centerMode: true,
-        centerPadding: '0px',
-        focusOnSelect: true,
-        swipe: false
-      });
-      if(window.innerWidth > 767){
-        $('.slider1__item').zoom();
-      } else{
-        $('.product__view').appendTo($('.product__state'));
-      }
 
-      $("#search__mobile").click(()=>{
+
+    $("#search__mobile").click(()=>{
         $(".search__mobile").toggleClass("onclick");
       });
       $('.search__small').click(()=>{
@@ -111,11 +90,6 @@ window.onload = ()=>{
           $(".responsive__katalog").removeClass('onclick');
           $("#nav").removeClass("nav__fixed");
         }
-        if(window.innerWidth < 768){
-          $('.product__view').appendTo($('.product__state'));
-        } else {
-          $('.product__view').prependTo($('.product__item'));
-        }
       }
       if(window.innerWidth >= 853){
         $('#responsive__burger').css('display','none');
@@ -134,44 +108,7 @@ window.onload = ()=>{
         $('#nav__container').removeClass('nav__container__mobile').addClass('nav__container__smallest');
       }
 
-        
 
-        
-        $('#review').click(()=>{
-          $('#review').addClass("click__border");
-          $('#techspecs').removeClass("click__border");
-          $('#feedback').removeClass("click__border");
-          $('.details__review').addClass("click__display");
-          $('.details__techspecs').removeClass("click__display");
-          $('.details__feedback').removeClass("click__display");
-        });
-        $('#techspecs').click(()=>{
-          $('#techspecs').addClass("click__border");
-          $('#review').removeClass("click__border");
-          $('#feedback').removeClass("click__border");
-          $('.details__techspecs').addClass("click__display");
-          $('.details__review').removeClass("click__display");
-          $('.details__feedback').removeClass("click__display");
-        });
-        $('#feedback').click(()=>{
-          $('#feedback').addClass("click__border");
-          $('#techspecs').removeClass("click__border");
-          $('#review').removeClass("click__border");
-          $('.details__feedback').addClass("click__display");
-          $('.details__techspecs').removeClass("click__display");
-          $('.details__review').removeClass("click__display");
-        });
-      
-
-        // $.ajax({
-        //   type: "GET",
-        //   dataType: 'json',
-        //   contentType: 'application/json; charset=utf-8',
-        //   url: 'https://aquaplanner-dev.herokuapp.com/product/1',
-        //   success: function(jsondata){
-        //     console.log(jsondata);
-        //   }
-        // });
 
 
 
