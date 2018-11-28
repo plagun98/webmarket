@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = ()=>{
 
     $('.slider1').slick({
         slidesToShow: 1,
@@ -17,8 +17,9 @@ window.onload = function(){
         focusOnSelect: true,
         swipe: false
       });
+      $('.slider1__item').zoom();
       if(window.innerWidth > 767){
-        $('.slider1__item').zoom();
+        //$('.slider1__item').zoom();
       } else{
         $('.product__view').appendTo($('.product__state'));
       }
@@ -52,8 +53,10 @@ window.onload = function(){
             $(".menu__mobile").fadeOut(1);
             $(".menu__mobile").removeClass("menu__mobile__fixed");
             $(".home__anchor").css("display","none");
+            $("#nav").removeClass("nav__fixed");
           } else if(scrolled < 200){
             $(".menu__mobile").fadeIn(1);
+            $("#nav").removeClass("nav__fixed");
             } else if(scrolled > 400){
             $(".home__anchor").css("display","block");
             $(".menu__mobile").addClass("menu__mobile__fixed");
@@ -162,20 +165,50 @@ window.onload = function(){
           $('.details__review').removeClass("click__display");
         });
       
+        var xhr = new XMLHttpRequest();
+        var resp;
+        xhr.onreadystatechange = function(){
+          if(this.readyState == 4){
+            resp = JSON.parse(this.response);
+            console.log(resp);
+            //setURL(resp);
+            setSliderPhotos(resp);
+            setName (resp);
+            setSpecs (resp);
+          }
+        }
+        xhr.open('GET','https://aquaplanner-dev.herokuapp.com/product/get_product/1', true);
+        xhr.send();
 
-        // $.ajax({
-        //   type: "GET",
-        //   dataType: 'json',
-        //   contentType: 'application/json; charset=utf-8',
-        //   url: 'https://aquaplanner-dev.herokuapp.com/product/1',
-        //   success: function(jsondata){
-        //     console.log(jsondata);
-        //   }
-        // });
+        function setURL (resp){
+          //window.location.href += "/"+resp.data.transliterationName;
+        }
 
-
-
-
+        function setSliderPhotos (resp){
+          var slider1Arr = $('.slider1photo');
+          var slidernavArr = $('.slidernavphoto');
+          var zoomImg = $('.zoomImg');
+          var imageUrls650 = resp.data.imageUrls650;
+          var imageUrls85 = resp.data.imageUrls85;
+          for(var i=0; i<slider1Arr.length; i++){
+            slider1Arr[i].src=imageUrls650[i];
+            slidernavArr[i].src=imageUrls85[i];
+            zoomImg[i].src=imageUrls650[i];
+          }
+        }
+        function setName (resp){
+          $('#product__name').append("<p class='product__name'>"+resp.data.name+"</p>");
+        }
+        function setSpecs(resp){
+          var specs = resp.data.specifications;
+          for(var i=0;i<specs.length;i++){
+            if(i%2 == 0){
+              $('.details__techspecs').append("<div class='flex even'><span>"+specs[i].name+"</span><p>"+specs[i].value+"</p><div>");
+            } else {
+              $('.details__techspecs').append("<div class='flex odd'><span>"+specs[i].name+"</span><p>"+specs[i].value+"</p><div>");
+            }
+          }
+        }
 
 
 

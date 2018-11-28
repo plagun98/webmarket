@@ -33,13 +33,14 @@ $(window).scroll(()=>{
     }
   } else if(window.innerWidth < 767) {
     var scrolled = ($(window).scrollTop());
-    console.log(scrolled);
     if(scrolled > 200 && scrolled < 400){
       $(".menu__mobile").fadeOut(1);
       $(".menu__mobile").removeClass("menu__mobile__fixed");
       $(".home__anchor").css("display","none");
+      $("#nav").removeClass("nav__fixed");
     } else if(scrolled < 200){
       $(".menu__mobile").fadeIn(1);
+      $("#nav").removeClass("nav__fixed");
       } else if(scrolled > 400){
       $(".home__anchor").css("display","block");
       $(".menu__mobile").addClass("menu__mobile__fixed");

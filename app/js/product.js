@@ -17,8 +17,9 @@ window.onload = ()=>{
         focusOnSelect: true,
         swipe: false
       });
+      $('.slider1__item').zoom();
       if(window.innerWidth > 767){
-        $('.slider1__item').zoom();
+        //$('.slider1__item').zoom();
       } else{
         $('.product__view').appendTo($('.product__state'));
       }
@@ -52,8 +53,10 @@ window.onload = ()=>{
             $(".menu__mobile").fadeOut(1);
             $(".menu__mobile").removeClass("menu__mobile__fixed");
             $(".home__anchor").css("display","none");
+            $("#nav").removeClass("nav__fixed");
           } else if(scrolled < 200){
             $(".menu__mobile").fadeIn(1);
+            $("#nav").removeClass("nav__fixed");
             } else if(scrolled > 400){
             $(".home__anchor").css("display","block");
             $(".menu__mobile").addClass("menu__mobile__fixed");
@@ -171,6 +174,7 @@ window.onload = ()=>{
             //setURL(resp);
             setSliderPhotos(resp);
             setName (resp);
+            setSpecs (resp);
           }
         }
         xhr.open('GET','https://aquaplanner-dev.herokuapp.com/product/get_product/1', true);
@@ -194,6 +198,16 @@ window.onload = ()=>{
         }
         function setName (resp){
           $('#product__name').append("<p class='product__name'>"+resp.data.name+"</p>");
+        }
+        function setSpecs(resp){
+          var specs = resp.data.specifications;
+          for(var i=0;i<specs.length;i++){
+            if(i%2 == 0){
+              $('.details__techspecs').append("<div class='flex even'><span>"+specs[i].name+"</span><p>"+specs[i].value+"</p><div>");
+            } else {
+              $('.details__techspecs').append("<div class='flex odd'><span>"+specs[i].name+"</span><p>"+specs[i].value+"</p><div>");
+            }
+          }
         }
 
 
