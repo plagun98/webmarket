@@ -82,7 +82,7 @@ body {
   display: block !important;
 }
 .slide {
-  background: url(../img/iphone.jpg) no-repeat;
+  background: url(../img/phone.jpg) center center;
   height: 50rem;
   width: 100%;
   position: relative;
