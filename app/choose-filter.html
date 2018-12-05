@@ -11,222 +11,41 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="container" id="header">
-            <img src="../img/headerlogo.png" id="headerlogo" alt="">
-            <p class="phone__number">+380123456789</p>
-            <div class="search__small headeritem">
-                <img src="../img/search.png" id="searchicon" alt="">
-            </div>
-            <div class="search">
-                <input class="input" type="text">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="headeritems">
-                <img src="../img/headeritem.png" class="headeritem" alt="">
-                <img src="../img/headeritem.png" class="headeritem" alt="">
-                <img src="../img/headeritem.png" class="headeritem" alt="">
-                <img src="../img/headeritem.png" class="headeritem" alt="">
-            </div>
-        </div>
-    </header>
-    <div class="header__mobile">
-        <img src="../img/headerlogo.png">
-    </div>
-    <div class="navbar__mobile">
-        <ul class="menu__mobile">
-            <li><i class="fas fa-bars" id="burger"></i></li>
-            <li><i class="fas fa-sign-in-alt"></i></li>
-            <li><i class="fas fa-search" id="search__mobile"></i></li>
-            <li><i class="far fa-thumbs-up"></i></li>
-            <li><i class="far fa-heart"></i></li>
-            <li><i class="fas fa-shopping-cart"></i></li>
-        </ul>
-    </div>
-    <div class="search__mobile">
-        <input placeholder="Search here .." id="search__mobile__input" type="text">
-    </div>
-    <nav>
-        <div class="container" id="nav">
-            <div class="navitem navcollection"><span>&#9776; Каталог товаров</span></div>
-                <ul class="responsive__katalog">
-                    <li><a href="#">Samsung</a></li>
-                    <li><a href="#">Apple</a></li>
-                    <li><a href="#">Huawei</a></li>
-                    <li><a href="#">Xiaomi</a></li>
-                </ul>
-            <div class="nav__container" id="nav__container">
-                <div class="responsive__burger" id="responsive__burger"><i class="fas fa-bars"></i></div>
-                <div class="navitem" id="nav0"><span>Распродажа</span></div>
-                <div class="navitem" id="nav1"><span>Магазины</span></div>
-                <div class="navitem" id="nav2"><span>Рассрочка/Кредит</span></div>
-                <div class="navitem" id="nav3"><span>Доставка</span></div>
-                <div class="navitem" id="nav4"><span>Оплата</span></div>
-                <div class="navitem" id="nav5"><span>Гарантия</span></div>
-            </div>
-        </div>
-    </nav>
+    <div id="headerload"></div>
     <section>
-    
-        <main class="cd-main-content">
-            <div class="cd-tab-filter-wrapper">
-                <div class="cd-tab-filter">
-                    <ul class="cd-filters">
-                        <li class="placeholder"> 
-                            <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-                        </li> 
-                        <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-                        <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Color 1</a></li>
-                        <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Color 2</a></li>
-                    </ul> <!-- cd-filters -->
-                </div> <!-- cd-tab-filter -->
-            </div> <!-- cd-tab-filter-wrapper -->
-    
-            <section class="cd-gallery">
-                <ul>
-                    <li class="mix color-1 check1 radio2 option3"><img src="img/img-1.jpg" alt="Image 1"></li>
-                    <li class="mix color-2 check2 radio2 option2"><img src="img/img-2.jpg" alt="Image 2"></li>
-                    <li class="mix color-1 check3 radio3 option1"><img src="img/img-3.jpg" alt="Image 3"></li>
-                    <li class="mix color-1 check3 radio2 option4"><img src="img/img-4.jpg" alt="Image 4"></li>
-                    <li class="mix color-1 check1 radio3 option2"><img src="img/img-5.jpg" alt="Image 5"></li>
-                    <li class="mix color-2 check2 radio3 option3"><img src="img/img-6.jpg" alt="Image 6"></li>
-                    <li class="mix color-2 check2 radio2 option1"><img src="img/img-7.jpg" alt="Image 7"></li>
-                    <li class="mix color-1 check1 radio3 option4"><img src="img/img-8.jpg" alt="Image 8"></li>
-                    <li class="mix color-2 check1 radio2 option3"><img src="img/img-9.jpg" alt="Image 9"></li>
-                    <li class="mix color-1 check3 radio2 option4"><img src="img/img-10.jpg" alt="Image 10"></li>
-                    <li class="mix color-1 check3 radio3 option2"><img src="img/img-11.jpg" alt="Image 11"></li>
-                    <li class="mix color-2 check1 radio3 option1"><img src="img/img-12.jpg" alt="Image 12"></li>
-                    <li class="gap"></li>
-                    <li class="gap"></li>
-                    <li class="gap"></li>
-                </ul>
-                <div class="cd-fail-message">No results found</div>
-            </section> <!-- cd-gallery -->
-    
-            <div class="cd-filter">
-                <form>
-                    <div class="cd-filter-block">
-                        <h4>Search</h4>
-                        
-                        <div class="cd-filter-content">
-                            <input type="search" placeholder="Try color-1...">
-                        </div> <!-- cd-filter-content -->
-                    </div> <!-- cd-filter-block -->
-    
-                    <div class="cd-filter-block">
-                        <h4>Check boxes</h4>
-    
-                        <ul class="cd-filter-content cd-filters list">
-                            <li>
-                                <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-                                <label class="checkbox-label" for="checkbox1">Option 1</label>
-                            </li>
-    
-                            <li>
-                                <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-                                <label class="checkbox-label" for="checkbox2">Option 2</label>
-                            </li>
-    
-                            <li>
-                                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                                <label class="checkbox-label" for="checkbox3">Option 3</label>
-                            </li>
-                        </ul> <!-- cd-filter-content -->
-                    </div> <!-- cd-filter-block -->
-    
-                    <div class="cd-filter-block">
-                        <h4>Select</h4>
-                        
-                        <div class="cd-filter-content">
-                            <div class="cd-select cd-filters">
-                                <select class="filter" name="selectThis" id="selectThis">
-                                    <option value="">Choose an option</option>
-                                    <option value=".option1">Option 1</option>
-                                    <option value=".option2">Option 2</option>
-                                    <option value=".option3">Option 3</option>
-                                    <option value=".option4">Option 4</option>
-                                </select>
-                            </div> <!-- cd-select -->
-                        </div> <!-- cd-filter-content -->
-                    </div> <!-- cd-filter-block -->
-    
-                    <div class="cd-filter-block">
-                        <h4>Radio buttons</h4>
-    
-                        <ul class="cd-filter-content cd-filters list">
-                            <li>
-                                <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-                                <label class="radio-label" for="radio1">All</label>
-                            </li>
-    
-                            <li>
-                                <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
-                                <label class="radio-label" for="radio2">Choice 2</label>
-                            </li>
-    
-                            <li>
-                                <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
-                                <label class="radio-label" for="radio3">Choice 3</label>
-                            </li>
-                        </ul> <!-- cd-filter-content -->
-                    </div> <!-- cd-filter-block -->
-                </form>
-    
-                <a href="#0" class="cd-close">Close</a>
-            </div> <!-- cd-filter -->
-    
-            <a href="#0" class="cd-filter-trigger">Filters</a>
-        </main> <!-- cd-main-content -->
-    </section>
-
-    <footer>
-        <div class="container bottom">
-             <div class="informal">
-                 <img src="../img/headerlogo.png" id="footerlogo" alt="">
-                 <p class="footer__phone">+38 012 345 67 89</p>
-                 <div class="back__call">
-                     <p>Обратный звонок</p>
-                 </div>
-             </div>
-             <div class="categories" id="ct1">
-                 <h3 class="h3heading">Categories</h3>
-                 <div class="content" id="cn1">
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                 </div>
-             </div>
-             <div class="categories" id="ct2">
-                 <h3 class="h3heading">Useful info</h3>
-                 <div class="content" id="cn2">
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                     <div class="categories__item"><a>item</a></div>
-                 </div>
-             </div>
-             <div class="social__networks">
-                 <div class="socnetimg"><img src="../img/facebook.png"></div>
-                 <div class="socnetimg"><img src="../img/facebook.png"></div>
-             </div>
+        <div class="container flex">
+            <div class="filters">
+                <button class="filter" data-filter="all">Сбросить</button>
+                <button class="filter" data-filter=".cat1">Кат1</button>
+                <button class="filter" data-filter=".cat2">Кат2</button>
+                <button class="filter" data-filter=".cat3">Кат3</button>
+            </div>
+            <div class="main__content">
+                <div class="main__content__header">
+                    <h1>Смартфоны</h1>
+                </div>
+                <div class="main__content__sort">
+                    <button class="sort" data-sort="price:desc">Убывание</button>
+                    <button class="sort" data-sort="price:asc">Возростание</button>
+                </div>
+                <div class="main__content__products" id="main__container__products">
+                    <div class="mix cat1" data-price="1">1</div>
+                    <div class="mix cat3" data-price="2">2</div>
+                    <div class="mix cat1" data-price="3">3</div>
+                    <div class="mix cat2" data-price="4">4</div>
+                    <div class="mix cat1" data-price="5">5</div>
+                    <div class="mix cat1" data-price="6">6</div>
+                    <div class="mix cat3" data-price="7">7</div>
+                    <div class="mix cat2" data-price="8">8</div>
+                </div>
+            </div>
         </div>
-    </footer>
-
+    </section>
+    <div id="footerload"></div>
 
     <script src="js/libs.min.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/choose-filter.js"></script>
 </body>
 </html>
